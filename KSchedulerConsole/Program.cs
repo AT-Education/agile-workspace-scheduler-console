@@ -8,22 +8,24 @@ namespace KSchedulerConsole
 {
     class Program
     {
-        public static IReadOnlyList<string> Employees = new List<string> { "A", "B", "C","D", "E", "F", "G", "H"};
+        public static List<string> Employees = new List<string> { "A", "B", "C","D", "E", "F", "G"};
         private const int days = 5;
 
         static void Main(string[] args)
         {
-            
+
             var (seats, emps) = RegistrationUtil.Seed(7, 5);
 
             int batch = 2;
 
-            var que = QueueUtil<Employee>.InitQueue(emps);
-            var qUtil = new QueueUtil<Employee>(que);
-
-            //var cfhMap2.Add(cfh, GetNext<Employee>(cfhEmps2, c)); //= cfhEmps2.Select(c => new { cfh = c, nxt = GetNext<Employee>(cfhEmps2, c)});
-
+            QueueUtil<Employee> qUtil;
             var prevcfh = new List<Employee>();
+
+            var que = QueueUtil<Employee>.InitQueue(emps);
+            qUtil = new QueueUtil<Employee>(que);
+
+            ProjectItems(Employees, batch);
+
             for (int i = 0; i < days; i++)
             {
                 Console.WriteLine($"--------------DAY-{i}--------------");
@@ -39,6 +41,39 @@ namespace KSchedulerConsole
             }
 
             Console.WriteLine("Hello World!");
+        }
+
+        private static void ProjectItems<T>(List<T> emps, int batch)
+        {
+            var que = QueueUtil<T>.InitQueue(emps);
+            var qUtil = new QueueUtil<T>(que);
+
+            //var cfhMap2.Add(cfh, GetNext<Employee>(cfhEmps2, c)); //= cfhEmps2.Select(c => new { cfh = c, nxt = GetNext<Employee>(cfhEmps2, c)});
+
+            var prevcfh = new List<T>();
+            var allCfhPairs = new List<List<T>>();
+            for (int i = 0; i < days; i++)
+            {
+                allCfhPairs.Add(qUtil.Next(batch) as List<T>);
+            }
+
+            var projectedCfh = new List<(List<T>, List<T>, List<T>)>();
+            foreach (var item in allCfhPairs)
+            {
+                var PCN = (GetPrevious(allCfhPairs, item), item, GetNext(allCfhPairs, item));
+                projectedCfh.Add(PCN);
+            }
+
+            
+
+            foreach (var item in projectedCfh)
+            {
+                
+                PrintCollection<T>(item.Item1);
+                PrintCollection<T>(item.Item2);
+                PrintCollection<T>(item.Item3);
+                Console.WriteLine();
+            }
         }
 
         private static List<Employee> GetNextCfh(List<Employee> cfhEmps, List<Employee> emps, int batch)
@@ -92,11 +127,37 @@ namespace KSchedulerConsole
             Console.WriteLine(empStr);
         }
 
+        private static void PrintCollection<T>(List<T> cfhEmps)
+        {
+            if (cfhEmps!=null)
+            {
+                var empStr = "";
+                foreach (var item in cfhEmps)
+                {
+                    empStr = empStr + item.ToString() + " , ";
+                }
+                Console.Write(empStr + "==>");
+            }
+            Console.Write("NULL" + "==>");
+        }
+
         private static T GetNext<T>(IEnumerable<T> list, T current)
         {
             try
             {
                 return list.SkipWhile(x => !x.Equals(current)).Skip(1).First();
+            }
+            catch
+            {
+                return default(T);
+            }
+        }
+
+        private static T GetPrevious<T>(IEnumerable<T> list, T current)
+        {
+            try
+            {
+                return list.TakeWhile(x => !x.Equals(current)).Last();
             }
             catch
             {

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/arnab/Projects/KSchedulerConsole/KSchedulerConsole/KSchedulerConsole.csproj": {}
+    "/Users/arnab/Projects/agile-workspace-scheduler-console/KSchedulerConsole/KSchedulerConsole.csproj": {}
   },
   "projects": {
-    "/Users/arnab/Projects/KSchedulerConsole/KSchedulerConsole/KSchedulerConsole.csproj": {
+    "/Users/arnab/Projects/agile-workspace-scheduler-console/KSchedulerConsole/KSchedulerConsole.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/arnab/Projects/KSchedulerConsole/KSchedulerConsole/KSchedulerConsole.csproj",
+        "projectUniqueName": "/Users/arnab/Projects/agile-workspace-scheduler-console/KSchedulerConsole/KSchedulerConsole.csproj",
         "projectName": "KSchedulerConsole",
-        "projectPath": "/Users/arnab/Projects/KSchedulerConsole/KSchedulerConsole/KSchedulerConsole.csproj",
+        "projectPath": "/Users/arnab/Projects/agile-workspace-scheduler-console/KSchedulerConsole/KSchedulerConsole.csproj",
         "packagesPath": "/Users/arnab/.nuget/packages/",
-        "outputPath": "/Users/arnab/Projects/KSchedulerConsole/KSchedulerConsole/obj/",
+        "outputPath": "/Users/arnab/Projects/agile-workspace-scheduler-console/KSchedulerConsole/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -28,8 +28,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "/Users/arnab/Projects/KSchedulerConsole/Scheduler/Scheduler.csproj": {
-                "projectPath": "/Users/arnab/Projects/KSchedulerConsole/Scheduler/Scheduler.csproj"
+              "/Users/arnab/Projects/agile-workspace-scheduler-console/Scheduler/Scheduler.csproj": {
+                "projectPath": "/Users/arnab/Projects/agile-workspace-scheduler-console/Scheduler/Scheduler.csproj"
               }
             }
           }
@@ -61,14 +61,14 @@
         }
       }
     },
-    "/Users/arnab/Projects/KSchedulerConsole/Scheduler/Scheduler.csproj": {
+    "/Users/arnab/Projects/agile-workspace-scheduler-console/Scheduler/Scheduler.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/arnab/Projects/KSchedulerConsole/Scheduler/Scheduler.csproj",
+        "projectUniqueName": "/Users/arnab/Projects/agile-workspace-scheduler-console/Scheduler/Scheduler.csproj",
         "projectName": "Scheduler",
-        "projectPath": "/Users/arnab/Projects/KSchedulerConsole/Scheduler/Scheduler.csproj",
+        "projectPath": "/Users/arnab/Projects/agile-workspace-scheduler-console/Scheduler/Scheduler.csproj",
         "packagesPath": "/Users/arnab/.nuget/packages/",
-        "outputPath": "/Users/arnab/Projects/KSchedulerConsole/Scheduler/obj/",
+        "outputPath": "/Users/arnab/Projects/agile-workspace-scheduler-console/Scheduler/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

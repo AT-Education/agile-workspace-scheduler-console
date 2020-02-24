@@ -12,3 +12,17 @@
 /Users/arnab/Projects/KSchedulerConsole/KSchedulerConsole/bin/Debug/netcoreapp3.1/Scheduler.dll
 /Users/arnab/Projects/KSchedulerConsole/KSchedulerConsole/bin/Debug/netcoreapp3.1/Scheduler.pdb
 /Users/arnab/Projects/KSchedulerConsole/KSchedulerConsole/obj/Debug/netcoreapp3.1/KSchedulerConsole.csproj.CopyComplete
+/Users/arnab/Projects/agile-workspace-scheduler-console/KSchedulerConsole/bin/Debug/netcoreapp3.1/KSchedulerConsole
+/Users/arnab/Projects/agile-workspace-scheduler-console/KSchedulerConsole/bin/Debug/netcoreapp3.1/KSchedulerConsole.deps.json
+/Users/arnab/Projects/agile-workspace-scheduler-console/KSchedulerConsole/bin/Debug/netcoreapp3.1/KSchedulerConsole.runtimeconfig.json
+/Users/arnab/Projects/agile-workspace-scheduler-console/KSchedulerConsole/bin/Debug/netcoreapp3.1/KSchedulerConsole.runtimeconfig.dev.json
+/Users/arnab/Projects/agile-workspace-scheduler-console/KSchedulerConsole/bin/Debug/netcoreapp3.1/KSchedulerConsole.dll
+/Users/arnab/Projects/agile-workspace-scheduler-console/KSchedulerConsole/bin/Debug/netcoreapp3.1/KSchedulerConsole.pdb
+/Users/arnab/Projects/agile-workspace-scheduler-console/KSchedulerConsole/bin/Debug/netcoreapp3.1/Scheduler.dll
+/Users/arnab/Projects/agile-workspace-scheduler-console/KSchedulerConsole/bin/Debug/netcoreapp3.1/Scheduler.pdb
+/Users/arnab/Projects/agile-workspace-scheduler-console/KSchedulerConsole/obj/Debug/netcoreapp3.1/KSchedulerConsole.csprojAssemblyReference.cache
+/Users/arnab/Projects/agile-workspace-scheduler-console/KSchedulerConsole/obj/Debug/netcoreapp3.1/KSchedulerConsole.AssemblyInfoInputs.cache
+/Users/arnab/Projects/agile-workspace-scheduler-console/KSchedulerConsole/obj/Debug/netcoreapp3.1/KSchedulerConsole.AssemblyInfo.cs
+/Users/arnab/Projects/agile-workspace-scheduler-console/KSchedulerConsole/obj/Debug/netcoreapp3.1/KSchedulerConsole.csproj.CopyComplete
+/Users/arnab/Projects/agile-workspace-scheduler-console/KSchedulerConsole/obj/Debug/netcoreapp3.1/KSchedulerConsole.dll
+/Users/arnab/Projects/agile-workspace-scheduler-console/KSchedulerConsole/obj/Debug/netcoreapp3.1/KSchedulerConsole.pdb

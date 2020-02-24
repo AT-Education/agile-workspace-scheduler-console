@@ -2,11 +2,11 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="KSchedulerConsole/RegistrationUtil.cs">
     <Files>
       <File FileName="KSchedulerConsole/Program.cs" Line="19" Column="1" />
-      <File FileName="Scheduler/CircularQueue.cs" Line="71" Column="1" />
+      <File FileName="Scheduler/CircularQueue.cs" />
       <File FileName="Scheduler/BoundedQueueException.cs" />
       <File FileName="Scheduler/QueueUtil.cs" />
-      <File FileName="KSchedulerConsole/Seat.cs" Line="20" Column="1" />
-      <File FileName="KSchedulerConsole/Employee.cs" Line="12" Column="26" />
+      <File FileName="KSchedulerConsole/Seat.cs" />
+      <File FileName="KSchedulerConsole/Employee.cs" />
       <File FileName="KSchedulerConsole/RegistrationUtil.cs" Line="10" Column="1" />
     </Files>
     <Pads>

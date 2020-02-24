@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/arnab/Projects/KSchedulerConsole/Scheduler/Scheduler.csproj",
+      "projectUniqueName": "/Users/arnab/Projects/agile-workspace-scheduler-console/Scheduler/Scheduler.csproj",
       "projectName": "Scheduler",
-      "projectPath": "/Users/arnab/Projects/KSchedulerConsole/Scheduler/Scheduler.csproj",
+      "projectPath": "/Users/arnab/Projects/agile-workspace-scheduler-console/Scheduler/Scheduler.csproj",
       "packagesPath": "/Users/arnab/.nuget/packages/",
-      "outputPath": "/Users/arnab/Projects/KSchedulerConsole/Scheduler/obj/",
+      "outputPath": "/Users/arnab/Projects/agile-workspace-scheduler-console/Scheduler/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
