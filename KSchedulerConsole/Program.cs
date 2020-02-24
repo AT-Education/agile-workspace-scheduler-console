@@ -14,15 +14,13 @@ namespace KSchedulerConsole
         static void Main(string[] args)
         {
             
-            var (seats, emps) = RegistrationUtil.Seed(7, 5);
+            var (seats, emps) = RegistrationUtil.Seed(10, 7);
 
-            int batch = 2;
+            int batch = 3;
 
             var que = QueueUtil<Employee>.InitQueue(emps);
             var qUtil = new QueueUtil<Employee>(que);
-
-            //var cfhMap2.Add(cfh, GetNext<Employee>(cfhEmps2, c)); //= cfhEmps2.Select(c => new { cfh = c, nxt = GetNext<Employee>(cfhEmps2, c)});
-
+            
             var prevcfh = new List<Employee>();
             for (int i = 0; i < days; i++)
             {
@@ -38,7 +36,7 @@ namespace KSchedulerConsole
                 prevcfh = cfhEmps;
             }
 
-            Console.WriteLine("Hello World!");
+            Console.ReadLine();
         }
 
         private static List<Employee> GetNextCfh(List<Employee> cfhEmps, List<Employee> emps, int batch)
@@ -75,11 +73,11 @@ namespace KSchedulerConsole
                 //replace seat of prev cfh with current cfh
                 for (int i = 0; i < currentCfh.Count(); i++)
                 {
-                    inOfficeEmps.Find(o => o.Id == prevCfh[i].Id).seat = currentCfh[i].seat;
+                    inOfficeEmps[inOfficeEmps.FindIndex(o => o.Id == prevCfh[i].Id)].seat = currentCfh[i].seat;
                 }
             }
             
-            inOfficeEmps.ForEach(o=> Console.WriteLine(o.ToString()));
+            inOfficeEmps.OrderBy(o=>o.seat.Name).ToList().ForEach(o=> Console.WriteLine(o.ToString()));
         }
 
         private static void PrintEmployees(List<Employee> cfhEmps)
